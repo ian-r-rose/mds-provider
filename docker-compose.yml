@@ -33,3 +33,7 @@ services:
       - MDS_DB
       - MDS_USER
       - MDS_PASSWORD
+  pull:
+    build: ./pull
+    image: mds_provider_pull
+    container_name: mds_provider_pull
