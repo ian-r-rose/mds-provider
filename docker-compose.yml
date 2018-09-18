@@ -33,3 +33,7 @@ services:
       - MDS_DB
       - MDS_USER
       - MDS_PASSWORD
+  load:
+    build: ./load
+    image: mds_provider_load
+    container_name: mds_provider_load
